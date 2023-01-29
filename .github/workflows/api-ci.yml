@@ -26,6 +26,9 @@ jobs:
       - name: install
         shell: bash
         run: npm ci
+      - name: run linter
+        shell: bash
+        run: npm run lint
       - name: run unit test
         shell: bash
         run: npm test
